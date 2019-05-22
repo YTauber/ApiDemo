@@ -1,0 +1,16 @@
+﻿@using ApiDemo.Web.Models
+@using ApiDemo.Data
+@model IndexViewModel
+
+
+    @foreach (News n in Model.News)
+    {
+            
+                <h5>@n.Id</h5>
+                <h5>@n.Title</h5>
+                <a href="@n.Url">@n.Url</a>
+            <hr />
+    }
+
+
+
